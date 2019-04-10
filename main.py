@@ -1,6 +1,8 @@
 """
 menunjukan semua sintaxes python
 """
+from geometry.segitiga import hitung_luas_segitiga
+from geometry.persegi_panjang import hitung_luas_persegi_panjang
 print('hello world')
 
 # menghitung luas segitiga
@@ -46,9 +48,11 @@ tinggi = 8
 luas_segitiga = alas * tinggi / 2
 print(luas_segitiga)
 
-def hitung_luas_segitiga(title, alas, tinggi):
-    print(title)
-    return alas * tinggi / 2
 
-print(hitung_luas_segitiga('segitiga 1', 10, 5))
-print(hitung_luas_segitiga('segitiga 2', 7, 8))
+
+print(hitung_luas_segitiga('segitiga 1' , 10, 5))
+print(hitung_luas_segitiga('segitiga 2' , 7, 8))
+
+#MODULARISASI TAHAP KEDUA PEMBUATAN PACKAGE
+print(hitung_luas_persegi_panjang('persegi1' , 10 , 11))
+print(hitung_luas_persegi_panjang('persegi2' , 11 , 5))

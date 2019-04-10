@@ -6,7 +6,7 @@ print('hello world')
 # menghitung luas segitiga
 alas = 10
 tinggi = 3
-luas_segitiga = alas * tinggi
+luas_segitiga = alas * tinggi / 2
 print(luas_segitiga)
 # menggunakan logika percabangan
 if luas_segitiga < 30:
@@ -31,3 +31,24 @@ print('10', luas_segitiga)
 print('dengan For')
 for i in range(0 , 10):
     print(i+1 , luas_segitiga)
+
+
+    # MODULARISASI TAHAP PERTAMA PEMBUATAN FUNGSI
+print('segitiga 1')
+alas = 10
+tinggi = 5
+luas_segitiga = alas * tinggi / 2
+print(luas_segitiga)
+
+print('segitiga 2')
+alas = 7
+tinggi = 8
+luas_segitiga = alas * tinggi / 2
+print(luas_segitiga)
+
+def hitung_luas_segitiga(title, alas, tinggi):
+    print(title)
+    return alas * tinggi / 2
+
+print(hitung_luas_segitiga('segitiga 1', 10, 5))
+print(hitung_luas_segitiga('segitiga 2', 7, 8))
